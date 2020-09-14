@@ -29,9 +29,11 @@
 <%= form_for (@user) do |f| %>
   Your user name here: <%= f.text_field :username %><br />
   Email : <%= f.text_field :email, placeholder: "example@mail.com" %><br />
-  Password : <%= f.text_field :password %><br />
+  Password : <%= f.password_field :password %><br />
   <%= f.submit "Send" %>
 <% end %>
+
+<%# link_to  "edit", edit_user_path(@user) %>
 
 
 
